@@ -1,7 +1,7 @@
 
 node{
    stage('SCM Checkout'){
-     git 'https://github.com/babu-git1/my-app.gi'
+     git 'https://github.com/babu-git1/my-app.git'
    }
    stage('Compile-Package'){
 
