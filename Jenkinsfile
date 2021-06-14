@@ -1,3 +1,4 @@
+
 node{
    stage('SCM Checkout'){
      git 'https://github.com/babu-git1/my-app.git'
