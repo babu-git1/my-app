@@ -1,7 +1,7 @@
 
 node{
    stage('SCM Checkout'){
-     git 'https://github.com/babu-git1/my-app.git'
+     git 'https://github.com/babu-git1/my-app.gi'
    }
    stage('Compile-Package'){
 
@@ -33,7 +33,7 @@ node{
     try{
         sh 'docker rm -f tomcattest'
     }catch(error){
-        //  do nothing if there is an exceptio
+        //  do nothing if there is an exception
     }
    stage('Docker deployment'){
    sh 'docker run -d -p 8090:8080 --name tomcattest iambabu/myweb:0.0.2' 
